@@ -1,11 +1,14 @@
 import './App.css'
 import UncontrolledRadio from "./components/UncontrolledRadio.jsx";
+import Card from "./components/Card.jsx";
 
 function App() {
 
   return (
     <>
-      <UncontrolledRadio/>
+        <Card>
+            <UncontrolledRadio/>
+        </Card>
     </>
   )
 }
