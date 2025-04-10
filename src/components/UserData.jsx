@@ -5,7 +5,12 @@ export default function UserData() {
     const[userId, setUserId] = useState(1);
 
     const handleChangeUser = () => {
-        setUserId(userId+ 1);
+        if (userId > 9) {
+            setUserId (userId - 9);
+        }else{
+            setUserId(userId+ 1);
+        }
+        console.log(userId);
 
     }
 
@@ -15,7 +20,7 @@ export default function UserData() {
             .then(data =>
             {setUserData(data);
             })
-    }, [])
+    }, [userId])
     return (
         <>
             {userData ? (
