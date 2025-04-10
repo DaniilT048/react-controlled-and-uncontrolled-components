@@ -1,6 +1,7 @@
 import './App.css'
 import UncontrolledRadio from "./components/UncontrolledRadio.jsx";
 import Card from "./components/Card.jsx";
+import ControlledRadio from "./components/ControlledRadio.jsx";
 
 function App() {
 
@@ -9,6 +10,10 @@ function App() {
         <Card>
             <UncontrolledRadio/>
         </Card>
+        <Card>
+            <ControlledRadio/>
+        </Card>
+
     </>
   )
 }
